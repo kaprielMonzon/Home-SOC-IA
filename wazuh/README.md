@@ -64,7 +64,7 @@ Descargamos el cliente en el siguiente enlace
 https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html
 ```
 
-Al finalizar la instalacion, pegamos la clave del agente y abrimos el siguiente archivo de configuracion llamado **ossec** y pegamos la siguiente
+Al finalizar la instalacion, ejecutamos el programa, pegamos la clave del agente, abrimos el siguiente archivo de configuracion llamado **ossec** y pegamos la siguiente
 linea con el directorio que nosotros queremos que sea monitorizada.
 
 ```text
