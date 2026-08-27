@@ -56,12 +56,12 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ## 🗄️ Maquinas Virtuales
 
-| Sistema operativo | Debian 13 | Windows 10 |
-|-------------------|------------------------|
-| Funcion | Maquina Host | Maquina de prueba |
-| Nucleos Cpu | 4 | 4 |
-| Memoria Ram | 6GB | 4GB |
-| Almacenamiento | 100GB | 100GB |
+| Característica |     Debian 13    |       Windows 10     |
+|----------------|------------------|----------------------|
+| **Función** | Máquina Host (servidor) | Máquina de pruebas (agente) |
+| **Núcleos CPU** | 4 | 4 |
+| **Memoria RAM** | 6 GB | 4 GB |
+| **Almacenamiento** | 100 GB | 100 GB |
 
 ---
 
@@ -81,6 +81,7 @@ MCP Server: 3001
 
 ## 📁 Estructura del repositorio
 
+```
 Home-SOC-IA/
 ├── wazuh/
 │ └── README.md
@@ -93,7 +94,7 @@ Home-SOC-IA/
 ├── ollama/
 │ └── README.md
 └── README.md
-
+```
 
 
 
