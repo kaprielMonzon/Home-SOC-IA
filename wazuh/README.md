@@ -3,6 +3,7 @@
 La siguiente guia es para la maquina Linux y Windows.
 
 IP Linux: 192.168.1.78
+
 IP Windows: 192.168.79
 
 ## Linux
