@@ -1,0 +1,75 @@
+# Instalacion y configuracion de Wazuh
+
+La siguiente guia es para la maquina Linux y Windows.
+
+IP Linux: 192.168.1.78
+IP Windows: 192.168.79
+
+## Linux
+
+Con los siguientes comandos nos traemos e instalamos el cliente
+
+```text
+curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh
+sudo bash ./wazuh-install.sh -a
+```
+
+Al finalizar la instalacion nos deberian de dejar unas credenciales para acceder
+al panel.
+
+Despues vamos a generar un agente que va a ser nuestra VM de Windows 10
+
+```text
+sudo /var/ossec/bin/manage_agents
+```
+
+La clave nos la guardamos para mas adelante al instalar wazuh en Windows
+
+Una vez instalado verificamos el estado de los servicios que corre el programa
+
+```text
+sudo systemctl status wazuh-manager --no-pager
+sudo systemctl status wazuh-indexer --no-pager
+sudo systemctl status wazuh-dashboard --no-pager
+```
+
+Editamos un archivo yaml fundamental para el indexador con los siguientes valores
+
+```text
+sudo nano /etc/wazuh-indexer/opensearch.yml
+```
+
+```text
+network.host: "192.168.1.78"
+http.port: 9200
+```
+
+**ACLARACION:** Si el indexado no funciona pruebe con la ip 0.0.0.0 que deja que cualquier
+ip dentro de la red pueda comunicarse
+
+##Windows
+
+Descargamos el cliente en el siguiente enlace
+
+```text
+https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html
+```
+
+Al finalizar la instalacion, pegamos la clave del agente y abrimos el siguiente archivo de configuracion llamado **ossec** y pegamos la siguiente
+linea con la direccion que nosotros queremos que sea monitorizada.
+
+```text
+<directories check_all="yes" report_changes="yes" realtime="yes" recursion_level="5">C:\Users\kapriel</directories>
+```
+
+```text check_all="yes"``` revisa permisos, dueño, fechas, tamaño, etc.
+
+```text report_changes="yes"``` guarda y muestra que lineas cambiaron en archivos de texto.
+
+```text realtime="yes"``` detecta cambios al instante.
+
+```text recursion_level="0"``` solo vigila esa carpeta, no entra en subcarpetas.
+
+
+
+
