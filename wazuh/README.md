@@ -43,10 +43,6 @@ sudo nano /etc/wazuh-indexer/opensearch.yml
 network.host: "192.168.1.78"
 http.port: 9200
 ```
-
-**ACLARACION:** Si el indexado no funciona pruebe con la ip 0.0.0.0 que deja que cualquier
-ip dentro de la red pueda comunicarse
-
 ##Windows
 
 Descargamos el cliente en el siguiente enlace
@@ -71,5 +67,8 @@ linea con la direccion que nosotros queremos que sea monitorizada.
 ```text recursion_level="0"``` solo vigila esa carpeta, no entra en subcarpetas.
 
 
+##Conclusion
 
+Con esta serie de pasos tenemos instalado Wazuh en la maquina Debian que actua como servidor y anfitrion.
+Y la maquina Windows como maquina de prueba para ser monitorizada.
 
