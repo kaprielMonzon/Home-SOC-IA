@@ -33,6 +33,16 @@ sudo systemctl status wazuh-indexer --no-pager
 sudo systemctl status wazuh-dashboard --no-pager
 ```
 
+En mi caso instale **Uncomplicated Firewall** para la correcta comunicacion de los puertos e ips.
+
+```text
+sudo ufw allow 443/tcp         # HTTPS (Panel de wazuh y otros paneles)
+sudo ufw allow 1514/tcp        # Agente de Wazuh
+sudo ufw allow 1515/tcp        # Registro del agente
+sudo ufw allow 55000/tcp       # API
+sudo ufw allow 9200/tcp        # Wazuh Indexador
+```
+
 Editamos un archivo yaml fundamental para el indexador con los siguientes valores
 
 ```text
@@ -67,8 +77,10 @@ linea con la direccion que nosotros queremos que sea monitorizada.
 ```text recursion_level="0"``` solo vigila esa carpeta, no entra en subcarpetas.
 
 
-##Conclusion
+##Conclusion y aclaraciones
 
 Con esta serie de pasos tenemos instalado Wazuh en la maquina Debian que actua como servidor y anfitrion.
 Y la maquina Windows como maquina de prueba para ser monitorizada.
+
+Para acceder a la interfaz de Wazuh entramos por la ip de linux
 
