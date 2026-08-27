@@ -31,13 +31,13 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 - 🐧 Debian 13 
 - 🪟 Windows 10 
-- 🐦‍⬛ QEMU y VirtManager
+- 🐦‍ QEMU y VirtManager
 - 🐳 Docker y Docker Compose
 - 🐍 Python 3
 - 🖥️ Bash
 - 🖥️ Powershell
 - 🐺 Wazuh (Manager + Indexador + Dashboard + MCP Server|)
-- 🛜 NetAlertX 
+- ⚠️ NetAlertX 
 - 🟠 Grafana 
 - 🦙 Ollama
 
@@ -67,15 +67,15 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ## 🔓 Puertos Libres
 
-Wazuh: 55000 (API), 9200 (Indexer), 443 (Dashboard)
+Wazuh: **55000** (API), **9200** (Indexer), **443** (Dashboard)
 
-NetAlertX: 2020
+NetAlertX: **2020**
 
-Grafana: 3000
+Grafana: **3000**
 
-Ollama: 11434
+Ollama: **11434**
 
-MCP Server: 3001
+MCP Server: **3001**
 
 ---
 
