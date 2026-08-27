@@ -17,6 +17,8 @@ sudo bash ./wazuh-install.sh -a
 Al finalizar la instalacion nos deberian de dejar unas credenciales para acceder
 al panel.
 
+Para acceder a la interfaz de Wazuh entramos por la ip de linux https://192.168.1.78/
+
 Despues vamos a generar un agente que va a ser nuestra VM de Windows 10
 
 ```text
@@ -53,7 +55,7 @@ sudo nano /etc/wazuh-indexer/opensearch.yml
 network.host: "192.168.1.78"
 http.port: 9200
 ```
-##Windows
+## Windows
 
 Descargamos el cliente en el siguiente enlace
 
@@ -62,7 +64,7 @@ https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-age
 ```
 
 Al finalizar la instalacion, pegamos la clave del agente y abrimos el siguiente archivo de configuracion llamado **ossec** y pegamos la siguiente
-linea con la direccion que nosotros queremos que sea monitorizada.
+linea con el directorio que nosotros queremos que sea monitorizada.
 
 ```text
 <directories check_all="yes" report_changes="yes" realtime="yes" recursion_level="5">C:\Users\kapriel</directories>
@@ -77,10 +79,11 @@ linea con la direccion que nosotros queremos que sea monitorizada.
 ```text recursion_level="0"``` solo vigila esa carpeta, no entra en subcarpetas.
 
 
-##Conclusion y aclaraciones
+## Conclusion y aclaraciones
 
 Con esta serie de pasos tenemos instalado Wazuh en la maquina Debian que actua como servidor y anfitrion.
-Y la maquina Windows como maquina de prueba para ser monitorizada.
+Y la maquina Windows como maquina de prueba para ser monitorizada. 
 
-Para acceder a la interfaz de Wazuh entramos por la ip de linux
-
+Si se quiere monitorear mas carpetas dentro del directorio de Windows deberiamos cambiar el parametro de recursion level
+de un 0 a un numero mas elevado como 3, que escanearia a 3 subcarpetas hacia adentro, pero se debe de hacer con precaucion ya que esto consume recursos a niveles mas altos,
+no se deberia de hacer con todos los directorios.

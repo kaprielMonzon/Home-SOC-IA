@@ -1,4 +1,4 @@
-🛡️ SOC hogareño con detecciones en tiempo real y asistente local
+# 🛡️ SOC hogareño con detecciones en tiempo real y asistente local
 
 ---
 
@@ -17,7 +17,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ---
 
-📋 Objetivos
+## 📋 Objetivos
 
 - Utilizar contenedores Docker.
 - Virtualizacion de Windows y Debian.
@@ -27,7 +27,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ---
 
-🧰 Herramientas
+## 🧰 Herramientas
 
 - Debian 13 
 - Windows 10 
@@ -43,7 +43,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ---
 
-🖥️ Componentes
+## 🖥️ Componentes
 
 | CPU | AMD Ryzen 5 4600G |
 | Memoria Ram | 16 GB DDR4 |
@@ -52,7 +52,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 | Almacenamiento | 1 M.2 1TB |
 | Hipervisor | QEMU y VirtManager |
 
-🗄️ Maquinas Virtuales
+## 🗄️ Maquinas Virtuales
 
 | Sistema operativo | Debian 13 | Windows 10 |
 | Funcion | Maquina Host | Maquina de prueba |
@@ -62,7 +62,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ---
 
-🔓 Puertos Libres
+## 🔓 Puertos Libres
 
 Wazuh: 55000 (API), 9200 (Indexer), 443 (Dashboard)
 
@@ -76,7 +76,7 @@ MCP Server: 3001
 
 ---
 
-Estructura del repositorio
+## Estructura del repositorio
 
 Home-SOC-IA/
 ├── wazuh/
