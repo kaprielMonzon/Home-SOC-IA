@@ -29,32 +29,35 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 ## 🧰 Herramientas
 
-- Debian 13 
-- Windows 10 
-- QEMU y VirtManager
-- Docker y Docker Compose
-- Python 3
-- Bash
-- Powershell
-- Wazuh (Manager + Indexador + Dashboard + MCP Server|)
-- NetAlertX 
-- Grafana 
-- Ollama
+- 🐧 Debian 13 
+- 🪟 Windows 10 
+- 🐦‍⬛ QEMU y VirtManager
+- 🐳 Docker y Docker Compose
+- 🐍 Python 3
+- 🖥️ Bash
+- 🖥️ Powershell
+- 🐺 Wazuh (Manager + Indexador + Dashboard + MCP Server|)
+- 🛜 NetAlertX 
+- 🟠 Grafana 
+- 🦙 Ollama
 
 ---
 
 ## 🖥️ Componentes
 
-| CPU | AMD Ryzen 5 4600G |
-| Memoria Ram | 16 GB DDR4 |
-| GPU | AMD Radeon RX 590 8GB |
-| Placa Madre | MSI B450M A PRO MAX 2 |
-| Almacenamiento | 1 M.2 1TB |
-| Hipervisor | QEMU y VirtManager |
+| Componente | Especificación |
+|------------|----------------|
+| **CPU** | AMD Ryzen 5 4600G |
+| **Memoria RAM** | 16 GB DDR4 |
+| **GPU** | AMD Radeon RX 590 8GB |
+| **Placa Madre** | MSI B450M A PRO MAX 2 |
+| **Almacenamiento** | 1x M.2 1TB |
+| **Hipervisor** | QEMU y VirtManager |
 
 ## 🗄️ Maquinas Virtuales
 
 | Sistema operativo | Debian 13 | Windows 10 |
+|-------------------|------------------------|
 | Funcion | Maquina Host | Maquina de prueba |
 | Nucleos Cpu | 4 | 4 |
 | Memoria Ram | 6GB | 4GB |
@@ -76,23 +79,20 @@ MCP Server: 3001
 
 ---
 
-## Estructura del repositorio
+## 📁 Estructura del repositorio
 
 Home-SOC-IA/
 ├── wazuh/
-│   └── README.md
+│ └── README.md
 ├── netalertx/
-│   └── README.md
+│ └── README.md
 ├── grafana/
-│   └── README.md
+│ └── README.md
 ├── wazuh-mcp-server/
-│   └── README.md
+│ └── README.md
 ├── ollama/
-│   └── README.md
+│ └── README.md
 └── README.md
-
-
-
 
 
 

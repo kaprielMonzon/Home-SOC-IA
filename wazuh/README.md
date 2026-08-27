@@ -35,7 +35,7 @@ sudo systemctl status wazuh-indexer --no-pager
 sudo systemctl status wazuh-dashboard --no-pager
 ```
 
-En mi caso instale **Uncomplicated Firewall** para la correcta comunicacion de los puertos e ips.
+En mi caso instale **Uncomplicated Firewall (ufw)** para la correcta comunicacion de los puertos e ips.
 
 ```text
 sudo ufw allow 443/tcp         # HTTPS (Panel de wazuh y otros paneles)
