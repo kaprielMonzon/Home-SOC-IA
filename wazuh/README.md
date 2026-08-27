@@ -2,9 +2,9 @@
 
 La siguiente guia es para la maquina Linux y Windows.
 
-IP Linux: 192.168.1.78
+IP Linux: **192.168.1.78**
 
-IP Windows: 192.168.79
+IP Windows: **192.168.79**
 
 ## 🐧 Linux
 
@@ -18,7 +18,7 @@ sudo bash ./wazuh-install.sh -a
 Al finalizar la instalacion nos deberian de dejar unas credenciales para acceder
 al panel.
 
-Para acceder a la interfaz de Wazuh entramos por la ip de linux https://192.168.1.78/
+Para acceder a la interfaz de Wazuh entramos por la ip de linux **https://192.168.1.78/**
 
 Despues vamos a generar un agente que va a ser nuestra VM de Windows 10
 
