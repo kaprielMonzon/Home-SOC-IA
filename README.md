@@ -69,7 +69,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 
 Wazuh: **55000** (API), **9200** (Indexer), **443** (Dashboard)
 
-NetAlertX: **2020**
+NetAlertX: **20211**
 
 Grafana: **3000**
 

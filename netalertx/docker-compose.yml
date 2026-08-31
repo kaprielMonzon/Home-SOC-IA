@@ -1,4 +1,29 @@
+version: '3.8'
+
 services:
-  grafana:
-    image: grafana/grafana:latest
+  netalertx:
+    container_name: netalertx
+    image: ghcr.io/netalertx/netalertx:latest
     network_mode: host
+    read_only: true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - NET_BIND_SERVICE
+      - CHOWN
+      - SETUID
+      - SETGID
+    sysctls:
+      net.ipv4.conf.all.arp_ignore: 1
+      net.ipv4.conf.all.arp_announce: 2
+    volumes:
+      - ./data:/data
+      - /etc/localtime:/etc/localtime:ro
+    tmpfs:
+      - /tmp:uid=20211,gid=20211,mode=1700
+    environment:
+      - PORT=20211
+      - APP_CONF_OVERRIDE={"SCAN_SUBNETS":"[\"192.168.1.0/24 --interface=eth0\"]"}
+    restart: unless-stopped

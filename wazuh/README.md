@@ -1,3 +1,8 @@
+# Que es Wazuh?
+
+Es un SIEM y XDR, que recolecta logs de todos tus sistemas, genera alertas, almacena eventos, etc. En resumen es el primer filtro,
+que captura todo lo que pasa en tu red y sistemas.
+
 # ⬇️ Instalacion y configuracion de Wazuh
 
 La siguiente guia es para la maquina Linux y Windows.
