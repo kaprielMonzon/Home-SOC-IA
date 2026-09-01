@@ -1,4 +1,4 @@
-# Que funcion cumple Grafana?
+# ⁉️ Que funcion cumple Grafana?
 
 Ayuda a fusionar varios paneles en uno aca, tendremos acceso a los logs de Wazuh y las alertas e ids de NetAlertX.
 
@@ -62,7 +62,9 @@ Configuración:
 
 Lo guardamos y reiniciamos todos los servicios. Con esta configuracion ya tendriamos grafana configurado en solo lectura y con un dashboard configurado.
 
-## Aclaraciones
+## ⚠️ Aclaraciones
 
 Esta configuracion hace que Grafana consulte los datos de Wazuh y los muestre en paneles, sin modificar o borrar informacion. Es necesario aclarar que el usuario de **grafana_rol** en Wazuh sea el mismo que
 coloquemos en elasticsearch ya que asi podra heredar todas las metricas y permisos que le dimos.
+
+En el apartado de dashboard consegui un modelo personalizado muy bueno en formado json que esta en el repositorio.
