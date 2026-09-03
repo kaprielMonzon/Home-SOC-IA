@@ -1,7 +1,9 @@
-## ⁉️ En que consiste Wazuh MCP-Server
+# ⁉️ En que consiste Wazuh MCP-Server
 
 Es un servidor MCP (protocolo de contexto para modelos) sirve como puente de nuestro centro de seguridad Wazuh y
 la IA local que tengamos instalada. 
+
+---
 
 ## ⚙️ Instalacion y configuracion de Wazuh MCP-Server
 
@@ -11,6 +13,8 @@ Primero nos clonamos este repositorio
 git clone https://github.com/adi5353/wazuh-mcp.git
 cd wazuh-mcp
 ```
+
+---
 
 ## ⚠️ Aviso
 
@@ -39,6 +43,8 @@ Finalmente levantamos el contenedor
 ```text
 docker compose up -d
 ```
+
+---
 
 ## 🧠 Conclusion 
 

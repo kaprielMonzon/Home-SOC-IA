@@ -3,13 +3,17 @@
 Es un SIEM y XDR, que recolecta logs de todos tus sistemas, genera alertas, almacena eventos, etc. En resumen es el primer filtro,
 que captura todo lo que pasa en tu red y sistemas.
 
-# ⬇️ Instalacion y configuracion de Wazuh
+---
+
+## ⬇️ Instalacion y configuracion de Wazuh
 
 La siguiente guia es para la maquina Linux y Windows.
 
 IP Linux: **192.168.1.78**
 
 IP Windows: **192.168.79**
+
+---
 
 ## 🐧 Linux
 
@@ -61,6 +65,8 @@ sudo nano /etc/wazuh-indexer/opensearch.yml
 network.host: "192.168.1.78"
 http.port: 9200
 ```
+---
+
 ## 🪟 Windows
 
 Descargamos el cliente en el siguiente enlace
@@ -84,6 +90,7 @@ linea con el directorio que nosotros queremos que sea monitorizada.
 
 ```text recursion_level="0"``` solo vigila esa carpeta, no entra en subcarpetas.
 
+---
 
 ## ⚠️ Conclusion y aclaraciones
 

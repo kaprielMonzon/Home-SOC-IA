@@ -3,7 +3,9 @@
 Es un escáner de red que monitorea todos los dispositivos conectados a tu red local, es un buen complemento para Wazuh, ya que NetAlertX identifica por
 direccion MAC, Ip, Fabricante y nombre, se le pueden asignar varios campos. Detecta nuevos dispositivos y lanza alertas si aparece uno nuevo.
 
-# ⬇️ Instalacion y configuracion de NetAlertX
+---
+
+## ⬇️ Instalacion y configuracion de NetAlertX
 
 ## ⚠️️ Aviso 
 

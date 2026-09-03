@@ -2,7 +2,11 @@
 
 Ayuda a fusionar varios paneles en uno aca, tendremos acceso a los logs de Wazuh y las alertas e ids de NetAlertX.
 
-# ⬇️ Instalacion y configuracion de Grafana
+---
+
+## ⬇️ Instalacion y configuracion de Grafana
+
+Debemos tener descargado o copiado el archivo de formato **.yaml**
 
 ```text
 cd /docker/grafana
@@ -44,7 +48,9 @@ En Users:
 grafana_rol 
 ```
 
-Configurar el Data Source en Grafana:
+---
+
+## Configurar el Data Source en Grafana:
 
 1. Connections → Data sources
 2. Add data source
@@ -62,7 +68,9 @@ Configuración:
 
 Lo guardamos y reiniciamos todos los servicios. Con esta configuracion ya tendriamos grafana configurado en solo lectura y con un dashboard configurado.
 
-## ⚠️ Aclaraciones
+---
+
+# ⚠️ Aclaraciones
 
 Esta configuracion hace que Grafana consulte los datos de Wazuh y los muestre en paneles, sin modificar o borrar informacion. Es necesario aclarar que el usuario de **grafana_rol** en Wazuh sea el mismo que
 coloquemos en elasticsearch ya que asi podra heredar todas las metricas y permisos que le dimos.
