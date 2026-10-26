@@ -13,7 +13,6 @@ y comprender la utilidad de cada servicio e integracion de ellos
 
 Cada servicio, componente de este proyecto esta documentado y estructurado para su instalacion.
 
----
 
 ## 📋 Objetivos
 
@@ -23,7 +22,6 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 - Configurar scripts y servicios.
 - Documentar todo lo aprendido.
 
----
 
 ## 🧰 Herramientas
 
@@ -39,7 +37,6 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 - 🟠 Grafana 
 - 🦙 Ollama
 
----
 
 ## 🖥️ Componentes
 
@@ -61,7 +58,6 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 | **Memoria RAM** | 6 GB | 4 GB |
 | **Almacenamiento** | 100 GB | 100 GB |
 
----
 
 ## 🔓 Puertos Libres
 
@@ -75,7 +71,6 @@ Ollama: **11434**
 
 MCP Server: **3001**
 
----
 
 ## 📁 Estructura del repositorio
 
