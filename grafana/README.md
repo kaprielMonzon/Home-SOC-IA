@@ -2,7 +2,7 @@
 
 Ayuda a fusionar varios paneles en uno aca, tendremos acceso a los logs de Wazuh y las alertas e ids de NetAlertX.
 
----
+
 
 ## ⬇️ Instalacion y configuracion de Grafana
 
@@ -48,7 +48,7 @@ En Users:
 grafana_rol 
 ```
 
----
+
 
 ## Configurar el Data Source en Grafana:
 
@@ -68,7 +68,7 @@ Configuración:
 
 Lo guardamos y reiniciamos todos los servicios. Con esta configuracion ya tendriamos grafana configurado en solo lectura y con un dashboard configurado.
 
----
+
 
 # ⚠️ Aclaraciones
 
