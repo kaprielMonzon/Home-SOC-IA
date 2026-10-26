@@ -1,7 +1,5 @@
 # 🛡️ SOC hogareño con detecciones en tiempo real y asistente local
 
---
-
 Este proyecto consiste de un Centro de Operaciones de Seguridad escanea toda la red de mi casa. 
 
 Alerta los cambios como que dispositivos entran y salen, centraliza varios servicios en uno,
