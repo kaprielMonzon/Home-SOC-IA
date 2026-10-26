@@ -36,7 +36,7 @@ Cada servicio, componente de este proyecto esta documentado y estructurado para 
 - 🐍 Python 3
 - 🖥️ Bash
 - 🖥️ Powershell
-- 🐺 Wazuh (Manager + Indexador + Dashboard + MCP Server|)
+- 🐺 Wazuh (Manager + Indexador + Dashboard + MCP Server)
 - ⚠️ NetAlertX 
 - 🟠 Grafana 
 - 🦙 Ollama
