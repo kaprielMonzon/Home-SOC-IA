@@ -3,7 +3,7 @@
 Ollama es la herramienta que nos permitira correr modelos de inteligencia artificial localmente, sin enviar datos a ninguna corporacion y de manera privada.
 Lo que haremos es, usando el MCP Server con Wazuh con el index configurado de Grafana, hacer que pueda leer las alertas y eventos que ocurran en Wazuh y NetAlertx
 
----
+
 
 # ⬇️ Instalacion y configuracion de Ollama
 
@@ -82,7 +82,6 @@ LOG_PATH = "/var/ossec/logs/archives/archives.json"
 Para ejecutarlo debemos darle permisos de ejecucion al archivo **run.sh**. Si el puerto que usa, esta ocupado podemos cambiarlo por otro, al ejecutarlo nos deberia abrir una interfaz web, que nos
 brinda un chat para hacer las consultas.
 
----
 
 ## ⚠️ Conclusion y Aclaraciones
 
