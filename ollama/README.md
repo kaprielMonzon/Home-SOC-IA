@@ -1,4 +1,4 @@
-# ⁉ Que hace Ollama?
+# 🦙 Que hace Ollama?
 
 Ollama es la herramienta que nos permitira correr modelos de inteligencia artificial localmente, sin enviar datos a ninguna corporacion y de manera privada.
 Lo que haremos es, usando el MCP Server con Wazuh con el index configurado de Grafana, hacer que pueda leer las alertas y eventos que ocurran en Wazuh y NetAlertx
