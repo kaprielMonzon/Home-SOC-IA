@@ -32,8 +32,8 @@ En el siguiente apartado de las siguientes lineas tienen que estar puestas en **
 <global>
   <jsonout_output>yes</jsonout_output>
   <alerts_log>yes</alerts_log>
-  <logall>yes</logall>
-  <logall_json>yes</logall_json>
+  <logall>no</logall>
+  <logall_json>no</logall_json>
 </global> 
 ```
 
