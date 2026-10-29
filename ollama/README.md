@@ -26,7 +26,7 @@ Lo siguiente sera configurar Wazuh para poder integrarlo.
 sudo nano /var/ossec/etc/ossec.conf
 ```
 
-En el siguiente apartado de las siguientes lineas tienen que estar puestas en **yes**
+En el siguiente apartado de las siguientes lineas tienen que estar puestas en **yes** y las que generan logs por cada evento que ocurre en **no** ya que podriamos llenar el disco en cuestion de dias.
 
 ```text
 <global>
